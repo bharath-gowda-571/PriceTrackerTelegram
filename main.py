@@ -291,7 +291,7 @@ def main():
     logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s",
                         datefmt='%m/%d/%Y %I:%M:%S %p', handlers=[logging.FileHandler("output.log"), logging.StreamHandler()])
 
-    updater = Updater("1286095037:AAGZnP6KqzbFZjt9hFfQ9CYk6CgJNQobPdM")
+    updater = Updater("***TOKEN TO YOUR BOT***")
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('add', add))
     dp.add_handler(CommandHandler('list', list_names))
